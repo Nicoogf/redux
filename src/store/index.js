@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
+import contadorReducer from '../reducer/contadorReducer';
 
 const store = configureStore({
     reducer:{
-        contador: reducerContador,
-        carrito : reducerCarrito
+        contador: contadorReducer
     }
 })
 
